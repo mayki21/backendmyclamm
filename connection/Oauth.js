@@ -15,7 +15,7 @@ passport.use(
     {
       clientID: client_id,
       clientSecret: client_secret,
-      callbackURL: "https://orchid-tuna-yoke.cyclic.app/auth/google/callback",
+      callbackURL: "http://localhost:8080/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, cb) {
       let user = {

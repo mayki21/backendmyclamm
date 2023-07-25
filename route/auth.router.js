@@ -2,6 +2,8 @@ const express=require("express")
 const authrouter=express.Router()
 const passport=require("../connection/Oauth");
 const userModel=require("../model/usermodel");
+const jwt=require("jsonwebtoken")
+const bcrypt=require("bcrypt")
 
 
 

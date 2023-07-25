@@ -9,6 +9,7 @@ const lipstickroute = require("./route/lipstickroute")
 const cartroute=require("./route/cartroute")
 const auth=require("./middleware/auth")
 const duplicate=require("./middleware/duplicate")
+const authrouter = require("./route/auth.router")
 
 // const auth=require("./middleware/auth")
 
@@ -17,6 +18,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use("/user",userrouter)
+app.use("/auth",authrouter)
 
 app.use("/makeup",makeuproute)
 app.use("/skincare",skincareroute)
